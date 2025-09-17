@@ -5,37 +5,271 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
-        content="Soluciones innovadoras en desarrollo de software. AkkeBox, tu aliado tecnológico.">
+        content="AkkeBox - Empresa ecuatoriana de desarrollo de software. Creamos aplicaciones web, móviles y soluciones de inteligencia artificial para impulsar tu negocio.">
+    <meta name="keywords"
+        content="desarrollo software, aplicaciones web, apps móviles, inteligencia artificial, Ecuador, Ambato, tecnología">
     <meta name="author" content="AkkeBox">
-    <title>AkkeBox</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AkkeBox - Desarrollo de Software">
+    <meta property="og:description"
+        content="Soluciones innovadoras en desarrollo de software. Tu aliado tecnológico en Ecuador.">
+    <meta property="og:image" content="assets/imgs/logo.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AkkeBox - Desarrollo de Software">
+    <meta name="twitter:description"
+        content="Soluciones innovadoras en desarrollo de software. Tu aliado tecnológico en Ecuador.">
+    <meta name="twitter:image" content="assets/imgs/logo.png">
+
+    <title>AkkeBox - Desarrollo de Software | Ecuador</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
     <link rel="stylesheet" href="assets/css/leadmark.css">
     <link rel="icon" type="image/png" href="assets/imgs/logo.png">
+
+    <!-- Custom Styles -->
+    <style>
+        .github-link {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 4px 0;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            background: rgba(0, 123, 255, 0.1);
+            border: 1px solid rgba(0, 123, 255, 0.2);
+        }
+
+        .github-link:hover {
+            background: rgba(0, 123, 255, 0.2);
+            border-color: rgba(0, 123, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+            text-decoration: none;
+        }
+
+        .github-link strong {
+            transition: color 0.3s ease;
+        }
+
+        .github-link:hover strong {
+            color: #0056b3 !important;
+        }
+
+        /* Testimonial cards same height */
+        #testmonial .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #testmonial .col-md-4 {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        #testmonial .card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #testmonial .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #testmonial .card-body p {
+            flex: 1;
+        }
+
+        /* Blog cards same height */
+        #blog .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #blog .col-md-4 {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        #blog .card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #blog .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #blog .card-body p {
+            flex: 1;
+        }
+
+        #blog .card-body .small {
+            margin-top: auto;
+        }
+
+        /* Services cards same height */
+        #service .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #service .col-md-4 {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        #service .card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #service .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #service .card-body p {
+            flex: 1;
+        }
+
+        /* Portfolio cards same height and improved layout */
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        .portfolio-container>div {
+            padding: 15px;
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .portfolio-item {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item .content-holder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portfolio-item:hover .content-holder {
+            opacity: 1;
+        }
+
+        .portfolio-item .text-holder {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .portfolio-item .text-holder .title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .portfolio-item .text-holder .subtitle {
+            font-size: 1rem;
+            color: #f8f9fa;
+            line-height: 1.6;
+        }
+
+        /* Better responsive behavior */
+        @media (max-width: 767px) {
+            .portfolio-container>div {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .portfolio-container>div {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .portfolio-container>div {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- page Navigation -->
-    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10"
+        role="navigation" aria-label="Navegación principal">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center justify-content-center" href="#"
-                style="background-color: #ffffff; padding: 10px; border-radius: 100%;">
-                <img src="assets/imgs/logo.png" alt="AkkeBox">
+            <a class="navbar-brand d-flex align-items-center justify-content-center" href="#home"
+                style="background-color: #ffffff; padding: 10px; border-radius: 100%;" aria-label="AkkeBox - Inicio">
+                <img src="assets/imgs/logo.png" alt="Logo de AkkeBox - Empresa de desarrollo de software">
             </a>
-            <button class=" navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                aria-label="Alternar navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#service">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                <ul class="navbar-nav ml-auto" role="menubar">
+                    <li class="nav-item" role="none"><a class="nav-link" href="#service" role="menuitem">Servicios</a>
+                    </li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#about" role="menuitem">Sobre
+                            Nosotros</a></li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#portfolio"
+                            role="menuitem">Portafolio</a></li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#blog" role="menuitem">Blog</a></li>
+                    <li class="nav-item" role="none"><a class="nav-link" href="#contact" role="menuitem">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -43,18 +277,18 @@
     <!-- End Of Second Navigation -->
 
     <!-- Page Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="overlay">
             <h1 class="title">AKKE BOX</h1>
             <h1 class="subtitle">Ideas que cambian, tecnología que trasciende</h1>
         </div>
-        <div class="shape">
+        <div class="shape" aria-hidden="true">
             <svg viewBox="0 0 1500 200">
                 <path
                     d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z" />
             </svg>
         </div>
-        <div class="mouse-icon">
+        <div class="mouse-icon" aria-hidden="true">
             <div class="wheel"></div>
         </div>
     </header>
@@ -142,7 +376,8 @@
                 <!-- Web (4 cartas) -->
                 <div class="col-md-6 col-lg-4 web">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Sistema de Gestión Empresarial">
+                        <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Sistema de Gestión Empresarial"
+                            loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                             <div class="text-holder">
@@ -155,7 +390,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 web">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Portal de Clientes">
+                        <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Portal de Clientes" loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
                             <div class="text-holder">
@@ -168,7 +403,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 web">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="E-commerce Personalizado">
+                        <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="E-commerce Personalizado"
+                            loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
                             <div class="text-holder">
@@ -180,7 +416,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 web">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Dashboard Analítico">
+                        <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Dashboard Analítico" loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
                             <div class="text-holder">
@@ -194,7 +430,7 @@
                 <!-- Móvil (2 cartas) -->
                 <div class="col-md-6 col-lg-4 movil">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/about-1.jpg" class="img-fluid" alt="App de Delivery">
+                        <img src="assets/imgs/about-1.jpg" class="img-fluid" alt="App de Delivery" loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/about-1.jpg"></a>
                             <div class="text-holder">
@@ -207,7 +443,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 movil">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/about-2.jpg" class="img-fluid" alt="App de Reservas">
+                        <img src="assets/imgs/about-2.jpg" class="img-fluid" alt="App de Reservas" loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/about-2.jpg"></a>
                             <div class="text-holder">
@@ -220,7 +456,8 @@
                 <!-- Inteligencia Artificial (2 cartas) -->
                 <div class="col-md-6 col-lg-4 ia">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Chatbot Empresarial">
+                        <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Chatbot Empresarial"
+                            loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
                             <div class="text-holder">
@@ -233,7 +470,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 ia">
                     <div class="portfolio-item">
-                        <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Predicción de Ventas">
+                        <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Predicción de Ventas"
+                            loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
                             <div class="text-holder">
@@ -258,7 +496,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
-                        <img src="assets/imgs/about.jpg" alt="" class="card-img-top w-100">
+                        <img src="assets/imgs/about.jpg"
+                            alt="Ilustración sobre herramientas CASE en desarrollo de software"
+                            class="card-img-top w-100" loading="lazy">
                         <div class="card-body">
                             <h6 class="card-title">Herramientas CASE</h6>
                             <p>Taxonomía e Integración en el Desarrollo de Software.</p>
@@ -268,7 +508,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
-                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
+                        <img src="assets/imgs/blog-1.jpg" alt="Ilustración sobre tendencias en inteligencia artificial"
+                            class="card-img-top w-100" loading="lazy">
                         <div class="card-body">
                             <h6 class="card-title">Tendencias en Inteligencia Artificial</h6>
                             <p>Descubre cómo la IA está transformando los negocios y qué tecnologías están marcando el
@@ -279,7 +520,9 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
-                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
+                        <img src="assets/imgs/blog-2.jpg"
+                            alt="Ilustración sobre ciberseguridad para pequeñas y medianas empresas"
+                            class="card-img-top w-100" loading="lazy">
                         <div class="card-body">
                             <h6 class="card-title">Ciberseguridad para PYMES</h6>
                             <p>Consejos prácticos para proteger la información de tu empresa y evitar amenazas
@@ -303,7 +546,8 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="media align-items-center mb-3">
-                                <img class="mr-3" src="assets/imgs/avatar.jpg" alt="">
+                                <img class="mr-3" src="assets/imgs/avatar.jpg"
+                                    alt="Foto de perfil de Andrea López, Gerente de Proyectos" loading="lazy">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Andrea López</h6>
                                     <small class="text-muted mb-0">Gerente de Proyectos</small>
@@ -319,7 +563,8 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="media align-items-center mb-3">
-                                <img class="mr-3" src="assets/imgs/avatar-1.jpg" alt="">
+                                <img class="mr-3" src="assets/imgs/avatar-1.jpg"
+                                    alt="Foto de perfil de Carlos Méndez, Fundador de StartUp" loading="lazy">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Carlos Méndez</h6>
                                     <small class="text-muted mb-0">Fundador de StartUp</small>
@@ -334,7 +579,8 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="media align-items-center mb-3">
-                                <img class="mr-3" src="assets/imgs/avatar-2.jpg" alt="">
+                                <img class="mr-3" src="assets/imgs/avatar-2.jpg"
+                                    alt="Foto de perfil de Sofía Torres, Analista de Datos" loading="lazy">
                                 <div class="media-body">
                                     <h6 class="mt-1 mb-0">Sofía Torres</h6>
                                     <small class="text-muted mb-0">Analista de Datos</small>
@@ -353,43 +599,64 @@
     <!-- Contact Section -->
     <section id="contact" class="section has-img-bg pb-0">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 my-3">
-                    <h6 class="mb-0">Teléfono</h6>
-                    <p class="mb-4">+593 960742921</p>
+            <div class="row align-items-start">
+                <!-- Columna 1: Datos de Contacto -->
+                <div class="col-lg-6 col-md-6 my-3">
+                    <h6 class="mb-4 text-white">Información de Contacto</h6>
 
-                    <h6 class="mb-0">Ubicación</h6>
-                    <p class="mb-4">Ambato, Ecuador</p>
+                    <div class="mb-3">
+                        <h6 class="mb-2">Teléfono</h6>
+                        <p class="mb-0">+593 960742921</p>
+                    </div>
 
-                    <h6 class="mb-0">Email</h6>
-                    <p class="mb-0">akkebox@gmail.com</p>
-                    <p></p>
+                    <div class="mb-3">
+                        <h6 class="mb-2">Ubicación</h6>
+                        <p class="mb-0">Ambato, Ecuador</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h6 class="mb-2">Email</h6>
+                        <p class="mb-0">akkebox@gmail.com</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h6 class="mb-2">Horario de Atención</h6>
+                        <p class="mb-0">Lunes - Viernes: 8:00 AM - 6:00 PM</p>
+                        <p class="mb-0">Sábados: 9:00 AM - 2:00 PM</p>
+                    </div>
                 </div>
-                <div class="col-md-7 my-3">
-                    <h6 class="mb-0">Equipo de Desarrollo</h6>
+
+                <!-- Columna 2: Equipo de Desarrollo -->
+                <div class="col-lg-6 col-md-6 my-3">
+                    <h6 class="mb-4 text-white">Equipo de Desarrollo</h6>
                     <ul class="list-unstyled">
-                        <li>
-                            <a href="https://github.com/Papuxking" target="_blank" rel="noopener noreferrer">
+                        <li class="mb-2">
+                            <a href="https://github.com/Papuxking" target="_blank" rel="noopener noreferrer"
+                                class="github-link text-decoration-none">
                                 <strong style="color:#007bff;">Papuxking</strong>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://github.com/TicheKiwar" target="_blank" rel="noopener noreferrer">
+                        <li class="mb-2">
+                            <a href="https://github.com/TicheKiwar" target="_blank" rel="noopener noreferrer"
+                                class="github-link text-decoration-none">
                                 <strong style="color:#007bff;">TicheKiwar</strong>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://github.com/AngieCaiza27" target="_blank" rel="noopener noreferrer">
+                        <li class="mb-2">
+                            <a href="https://github.com/AngieCaiza27" target="_blank" rel="noopener noreferrer"
+                                class="github-link text-decoration-none">
                                 <strong style="color:#007bff;">AngieCaiza27</strong>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://github.com/SafeBryan" target="_blank" rel="noopener noreferrer">
+                        <li class="mb-2">
+                            <a href="https://github.com/SafeBryan" target="_blank" rel="noopener noreferrer"
+                                class="github-link text-decoration-none">
                                 <strong style="color:#007bff;">SafeBryan</strong>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://github.com/sSharpBlade" target="_blank" rel="noopener noreferrer">
+                        <li class="mb-2">
+                            <a href="https://github.com/sSharpBlade" target="_blank" rel="noopener noreferrer"
+                                class="github-link text-decoration-none">
                                 <strong style="color:#007bff;">sSharpBlade</strong>
                             </a>
                         </li>
