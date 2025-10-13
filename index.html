@@ -245,13 +245,86 @@
         /* Team images uniform size */
         #team .card-img-top {
             width: 100%;
-            height: 400px; /* Ajusta si deseas otra altura */
+            height: 400px;
+            /* Ajusta si deseas otra altura */
             object-fit: cover;
         }
 
         @media (max-width: 575.98px) {
             #team .card-img-top {
                 height: 200px;
+            }
+        }
+
+        /* Estilos para el modal de artículos */
+        .btn-ver-mas {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .btn-ver-mas:hover {
+            color: #3a8dde !important;
+            text-decoration: none;
+        }
+
+        #modalArticulo .modal-dialog {
+            max-width: 900px;
+        }
+
+        #modalArticulo .modal-body {
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .article-description h5 {
+            color: #3a8dde;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-description ul {
+            padding-left: 1.5rem;
+        }
+
+        .article-description li {
+            margin-bottom: 0.5rem;
+        }
+
+        .embed-responsive-16by9 {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+
+        .embed-responsive .embed-responsive-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Animación para las tarjetas de artículos */
+        #blog .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #blog .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos responsivos para el modal */
+        @media (max-width: 767.98px) {
+            #modalArticulo .modal-dialog {
+                margin: 1rem;
+                max-width: none;
+            }
+
+            #modalArticulo .modal-body {
+                max-height: 60vh;
             }
         }
     </style>
@@ -376,7 +449,8 @@
             <div class="row mt-4">
                 <div class="col-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <video class="embed-responsive-item" src="public_html/video.mp4" controls preload="metadata" aria-label="Video institucional de AkkeBox">
+                        <video class="embed-responsive-item" src="public_html/video.mp4" controls preload="metadata"
+                            aria-label="Video institucional de AkkeBox">
                             Tu navegador no soporta la reproducción de video HTML5.
                         </video>
                     </div>
@@ -399,8 +473,8 @@
                 <!-- Web (4 cartas) -->
                 <div class="col-md-6 col-lg-4 web">
                     <div class="portfolio-item">
-                        <img src="public_html/assets/imgs/web-1.jpg" class="img-fluid" alt="Sistema de Gestión Empresarial"
-                            loading="lazy">
+                        <img src="public_html/assets/imgs/web-1.jpg" class="img-fluid"
+                            alt="Sistema de Gestión Empresarial" loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="public_html/assets/imgs/web-1.jpg"></a>
                             <div class="text-holder">
@@ -413,7 +487,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 web">
                     <div class="portfolio-item">
-                        <img src="public_html/assets/imgs/web-2.jpg" class="img-fluid" alt="Portal de Clientes" loading="lazy">
+                        <img src="public_html/assets/imgs/web-2.jpg" class="img-fluid" alt="Portal de Clientes"
+                            loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="public_html/assets/imgs/web-2.jpg"></a>
                             <div class="text-holder">
@@ -439,7 +514,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 web">
                     <div class="portfolio-item">
-                        <img src="public_html/assets/imgs/web-4.jpg" class="img-fluid" alt="Dashboard Analítico" loading="lazy">
+                        <img src="public_html/assets/imgs/web-4.jpg" class="img-fluid" alt="Dashboard Analítico"
+                            loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="public_html/assets/imgs/web-4.jpg"></a>
                             <div class="text-holder">
@@ -453,7 +529,8 @@
                 <!-- Móvil (2 cartas) -->
                 <div class="col-md-6 col-lg-4 movil">
                     <div class="portfolio-item">
-                        <img src="public_html/assets/imgs/about-1.jpg" class="img-fluid" alt="App de Delivery" loading="lazy">
+                        <img src="public_html/assets/imgs/about-1.jpg" class="img-fluid" alt="App de Delivery"
+                            loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="public_html/assets/imgs/about-1.jpg"></a>
                             <div class="text-holder">
@@ -466,7 +543,8 @@
                 </div>
                 <div class="col-md-6 col-lg-4 movil">
                     <div class="portfolio-item">
-                        <img src="public_html/assets/imgs/about-2.jpg" class="img-fluid" alt="App de Reservas" loading="lazy">
+                        <img src="public_html/assets/imgs/about-2.jpg" class="img-fluid" alt="App de Reservas"
+                            loading="lazy">
                         <div class="content-holder">
                             <a class="img-popup" href="public_html/assets/imgs/about-2.jpg"></a>
                             <div class="text-holder">
@@ -519,25 +597,29 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
-                        <img src="public_html/assets/imgs/about.jpg"
-                            alt="Ilustración sobre herramientas CASE en desarrollo de software"
+                        <img src="public_html/assets/imgs/clickup-thumbnail.jpg"
+                            alt="ClickUp - Herramienta de gestión de proyectos y productividad"
                             class="card-img-top w-100" loading="lazy">
                         <div class="card-body">
-                            <h6 class="card-title">Herramientas CASE</h6>
-                            <p>Taxonomía e Integración en el Desarrollo de Software.</p>
-                            <a href="javascript:void(0)" class="small text-muted">Ver más</a>
+                            <h6 class="card-title">ClickUp: Gestión de Proyectos</h6>
+                            <p>Descubre cómo ClickUp revoluciona la gestión de proyectos y aumenta la productividad de
+                                tu equipo.</p>
+                            <a href="javascript:void(0)" class="small text-muted btn-ver-mas" data-article="clickup">Ver
+                                más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
-                        <img src="public_html/assets/imgs/blog-1.jpg" alt="Ilustración sobre tendencias en inteligencia artificial"
-                            class="card-img-top w-100" loading="lazy">
+                        <img src="public_html/assets/imgs/blog-1.jpg"
+                            alt="Ilustración sobre tendencias en inteligencia artificial" class="card-img-top w-100"
+                            loading="lazy">
                         <div class="card-body">
                             <h6 class="card-title">Tendencias en Inteligencia Artificial</h6>
                             <p>Descubre cómo la IA está transformando los negocios y qué tecnologías están marcando el
                                 futuro.</p>
-                            <a href="javascript:void(0)" class="small text-muted">Ver más</a>
+                            <a href="javascript:void(0)" class="small text-muted btn-ver-mas" data-article="ia">Ver
+                                más</a>
                         </div>
                     </div>
                 </div>
@@ -550,7 +632,25 @@
                             <h6 class="card-title">Ciberseguridad para PYMES</h6>
                             <p>Consejos prácticos para proteger la información de tu empresa y evitar amenazas
                                 digitales.</p>
-                            <a href="javascript:void(0)" class="small text-muted">Ver más</a>
+                            <a href="javascript:void(0)" class="small text-muted btn-ver-mas"
+                                data-article="ciberseguridad">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda fila de artículos -->
+            <div class="row mt-4">
+                <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="card border-0 mb-4">
+                        <img src="public_html/assets/imgs/about.jpg" alt="Herramientas CASE para desarrollo de software"
+                            class="card-img-top w-100" loading="lazy">
+                        <div class="card-body">
+                            <h6 class="card-title">Herramientas CASE</h6>
+                            <p>Taxonomía e Integración en el Desarrollo de Software. Descubre cómo estas herramientas
+                                mejoran la productividad y calidad del software.</p>
+                            <a href="javascript:void(0)" class="small text-muted btn-ver-mas" data-article="case">Ver
+                                más</a>
                         </div>
                     </div>
                 </div>
@@ -567,7 +667,8 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card border-0 h-100">
-                        <img src="public_html/fotos/CEO.png" alt="Foto del CEO de AkkeBox" class="card-img-top w-100" loading="lazy">
+                        <img src="public_html/fotos/CEO.png" alt="Foto del CEO de AkkeBox" class="card-img-top w-100"
+                            loading="lazy">
                         <div class="card-body d-flex flex-column">
                             <h6 class="card-title mb-1">CEO</h6>
                             <p class="flex-grow-1">Lidera la visión estratégica y la innovación continua.</p>
@@ -576,7 +677,8 @@
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card border-0 h-100">
-                        <img src="public_html/fotos/Cofundador1.png" alt="Foto de Cofundador 1" class="card-img-top w-100" loading="lazy">
+                        <img src="public_html/fotos/Cofundador1.png" alt="Foto de Cofundador 1"
+                            class="card-img-top w-100" loading="lazy">
                         <div class="card-body d-flex flex-column">
                             <h6 class="card-title mb-1">Cofundador</h6>
                             <p class="flex-grow-1">Especialista en desarrollo de soluciones a medida.</p>
@@ -585,7 +687,8 @@
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card border-0 h-100">
-                        <img src="public_html/fotos/Cofundador2.png" alt="Foto de Cofundador 2" class="card-img-top w-100" loading="lazy">
+                        <img src="public_html/fotos/Cofundador2.png" alt="Foto de Cofundador 2"
+                            class="card-img-top w-100" loading="lazy">
                         <div class="card-body d-flex flex-column">
                             <h6 class="card-title mb-1">Cofundador</h6>
                             <p class="flex-grow-1">Enfocado en experiencias de usuario y calidad.</p>
@@ -594,7 +697,8 @@
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card border-0 h-100">
-                        <img src="public_html/fotos/CTO1.png" alt="Foto de CTO 1" class="card-img-top w-100" loading="lazy">
+                        <img src="public_html/fotos/CTO1.png" alt="Foto de CTO 1" class="card-img-top w-100"
+                            loading="lazy">
                         <div class="card-body d-flex flex-column">
                             <h6 class="card-title mb-1">CTO</h6>
                             <p class="flex-grow-1">Dirige la arquitectura tecnológica y las mejores prácticas.</p>
@@ -603,7 +707,8 @@
                 </div>
                 <div class="col-md-4 col-sm-6 mb-4">
                     <div class="card border-0 h-100">
-                        <img src="public_html/fotos/CTO2.png" alt="Foto de CTO 2" class="card-img-top w-100" loading="lazy">
+                        <img src="public_html/fotos/CTO2.png" alt="Foto de CTO 2" class="card-img-top w-100"
+                            loading="lazy">
                         <div class="card-body d-flex flex-column">
                             <h6 class="card-title mb-1">CTO</h6>
                             <p class="flex-grow-1">Impulsa la adopción de tecnologías emergentes.</p>
@@ -749,6 +854,27 @@
             <!-- End of Page Footer -->
         </div>
     </section>
+
+    <!-- Modal para Artículos -->
+    <div class="modal fade" id="modalArticulo" tabindex="-1" role="dialog" aria-labelledby="modalArticuloLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalArticuloLabel">Título del Artículo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalArticuloBody">
+                    <!-- El contenido se cargará dinámicamente -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- core  -->
     <script src="public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
