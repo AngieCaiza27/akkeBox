@@ -202,6 +202,49 @@ $(document).ready(function () {
                     <p class="text-muted"><em>Las herramientas CASE integradas representan el futuro del desarrollo de software eficiente y de alta calidad.</em></p>
                 </div>
             `
+        },
+        devops: {
+            title: 'DevOps: Cultura y Automatización',
+            content: `
+                <div class="text-center mb-4">
+                    <h4>DevOps: Cultura, Automatización y Entrega Continua</h4>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/am9G4Vdc1gg?si=QwkMfRzJgjUyL5fE"
+                        title="Video DevOps"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="article-description">
+                    <h5>¿Qué es DevOps?</h5>
+                    <p>DevOps es una filosofía y conjunto de prácticas que integra el desarrollo de software (Dev) y las operaciones de TI (Ops), promoviendo la colaboración, automatización y entrega continua de valor.</p>
+                    <h5>Pilares de DevOps</h5>
+                    <ul>
+                        <li><strong>Colaboración:</strong> Equipos de desarrollo y operaciones trabajan juntos para lograr objetivos comunes.</li>
+                        <li><strong>Automatización:</strong> Uso de herramientas para automatizar pruebas, integración, despliegue y monitoreo.</li>
+                        <li><strong>Entrega Continua:</strong> Capacidad de liberar software de manera rápida, frecuente y confiable.</li>
+                        <li><strong>Monitoreo:</strong> Supervisión constante para detectar y resolver problemas rápidamente.</li>
+                    </ul>
+                    <h5>Herramientas DevOps Populares</h5>
+                    <ul>
+                        <li><strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab CI</li>
+                        <li><strong>Infraestructura como código:</strong> Terraform, Ansible</li>
+                        <li><strong>Contenedores:</strong> Docker, Kubernetes</li>
+                        <li><strong>Monitoreo:</strong> Prometheus, Grafana</li>
+                    </ul>
+                    <h5>Beneficios de DevOps</h5>
+                    <ul>
+                        <li>Despliegues más rápidos y seguros</li>
+                        <li>Menos errores y mayor calidad</li>
+                        <li>Mejor comunicación entre equipos</li>
+                        <li>Mayor satisfacción del cliente</li>
+                    </ul>
+                    <h5>Ejemplo Práctico</h5>
+                    <p>Un equipo DevOps utiliza integración continua para validar cada cambio de código automáticamente, despliega nuevas versiones en minutos y monitorea el sistema en tiempo real para asegurar la calidad y disponibilidad del servicio.</p>
+                </div>
+            `
         }
     };
 
