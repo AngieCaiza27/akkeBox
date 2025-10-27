@@ -218,31 +218,80 @@ $(document).ready(function () {
                         allowfullscreen></iframe>
                 </div>
                 <div class="article-description">
+                    <h5>Introducción e historia</h5>
+                    <p>El término DevOps fue acuñado en 2009 por Patrick Debois durante la primera conferencia DevOpsDays. Surgió como respuesta a la falta de colaboración entre desarrollo y operaciones bajo el modelo en cascada (Waterfall). El Manifiesto Ágil (2001) y la charla de Flickr (2009) inspiraron la integración continua entre ambos equipos. Empresas como Netflix, Amazon y Facebook fueron pioneras en su adopción.</p>
                     <h5>¿Qué es DevOps?</h5>
-                    <p>DevOps es una filosofía y conjunto de prácticas que integra el desarrollo de software (Dev) y las operaciones de TI (Ops), promoviendo la colaboración, automatización y entrega continua de valor.</p>
-                    <h5>Pilares de DevOps</h5>
+                    <p>Es una metodología y filosofía cultural que une Desarrollo (Dev) y Operaciones (Ops). Busca entregar software de forma rápida, segura y continua mediante automatización e integración. Promueve colaboración, comunicación y responsabilidad compartida durante todo el ciclo de vida del software.</p>
+                    <h5>Principios fundamentales</h5>
                     <ul>
-                        <li><strong>Colaboración:</strong> Equipos de desarrollo y operaciones trabajan juntos para lograr objetivos comunes.</li>
-                        <li><strong>Automatización:</strong> Uso de herramientas para automatizar pruebas, integración, despliegue y monitoreo.</li>
-                        <li><strong>Entrega Continua:</strong> Capacidad de liberar software de manera rápida, frecuente y confiable.</li>
-                        <li><strong>Monitoreo:</strong> Supervisión constante para detectar y resolver problemas rápidamente.</li>
+                        <li>Colaboración: equipos multidisciplinarios sin silos.</li>
+                        <li>Automatización: en pruebas, construcción, despliegue e infraestructura.</li>
+                        <li>Integración y entrega continua (CI/CD): código fusionado y desplegado frecuentemente.</li>
+                        <li>Mejora continua: optimización constante basada en métricas.</li>
+                        <li>Responsabilidad compartida: “Tú lo construyes, tú lo ejecutas”.</li>
+                        <li>Enfoque en el cliente: retroalimentación rápida y ciclos cortos.</li>
                     </ul>
-                    <h5>Herramientas DevOps Populares</h5>
+                    <h5>Metodologías relacionadas</h5>
                     <ul>
-                        <li><strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab CI</li>
-                        <li><strong>Infraestructura como código:</strong> Terraform, Ansible</li>
-                        <li><strong>Contenedores:</strong> Docker, Kubernetes</li>
-                        <li><strong>Monitoreo:</strong> Prometheus, Grafana</li>
+                        <li>Ágil: DevOps extiende sus principios hacia las operaciones.</li>
+                        <li>Lean: busca eliminar desperdicios y mejorar el flujo.</li>
+                        <li>Scrum y Kanban: frameworks ágiles para la planificación y visualización del trabajo.</li>
+                        <li>IaC (Infrastructure as Code): define infraestructura con código versionado y automatizado.</li>
                     </ul>
-                    <h5>Beneficios de DevOps</h5>
+                    <h5>Herramientas populares</h5>
                     <ul>
-                        <li>Despliegues más rápidos y seguros</li>
-                        <li>Menos errores y mayor calidad</li>
-                        <li>Mejor comunicación entre equipos</li>
-                        <li>Mayor satisfacción del cliente</li>
+                        <li>Control de versiones: Git, GitHub, GitLab.</li>
+                        <li>CI/CD: Jenkins, CircleCI, Travis CI.</li>
+                        <li>Contenedorización: Docker, Kubernetes.</li>
+                        <li>Automatización: Terraform, Ansible, Chef.</li>
+                        <li>Monitoreo: Prometheus, Grafana.</li>
                     </ul>
-                    <h5>Ejemplo Práctico</h5>
-                    <p>Un equipo DevOps utiliza integración continua para validar cada cambio de código automáticamente, despliega nuevas versiones en minutos y monitorea el sistema en tiempo real para asegurar la calidad y disponibilidad del servicio.</p>
+                    <h5>Beneficios de adoptar DevOps</h5>
+                    <ul>
+                        <li>+30% en frecuencia de implementación.</li>
+                        <li>+61% en calidad del producto.</li>
+                        <li>96 veces más rápida recuperación de fallos.</li>
+                        <li>22% de reducción en costos de TI.</li>
+                        <li>30% más productividad en desarrollo.</li>
+                        <li>Mayor colaboración, agilidad y escalabilidad.</li>
+                    </ul>
+                    <h5>Desafíos comunes</h5>
+                    <ul>
+                        <li>Complejidad técnica y falta de estandarización.</li>
+                        <li>Escasez de profesionales DevOps experimentados.</li>
+                        <li>Costos iniciales de implementación.</li>
+                        <li>Resistencia cultural al cambio organizacional.</li>
+                        <li>Curva de aprendizaje por nuevas herramientas.</li>
+                    </ul>
+                    <h5>Ciclo de vida DevOps</h5>
+                    <ul>
+                        <li>Planificación → objetivos y retroalimentación.</li>
+                        <li>Desarrollo → código colaborativo (Git).</li>
+                        <li>Construcción → compilación e integración (Jenkins).</li>
+                        <li>Pruebas → validación automatizada.</li>
+                        <li>Liberación → aprobación para producción.</li>
+                        <li>Implementación → despliegue automatizado (Terraform).</li>
+                        <li>Operación → mantenimiento y soporte.</li>
+                        <li>Monitoreo → observabilidad y mejoras continuas.</li>
+                    </ul>
+                    <h5>Roles en un equipo DevOps</h5>
+                    <ul>
+                        <li>DevOps Engineer – integra herramientas y procesos.</li>
+                        <li>SRE (Site Reliability Engineer) – garantiza fiabilidad y monitoreo.</li>
+                        <li>Automation Architect – elimina tareas manuales.</li>
+                        <li>Release Manager – coordina entregas.</li>
+                        <li>Cloud Engineer – optimiza entornos en la nube.</li>
+                        <li>Security Engineer (DevSecOps) – integra seguridad.</li>
+                        <li>QA Specialist – asegura la calidad.</li>
+                        <li>DevOps Evangelist – promueve la cultura DevOps.</li>
+                    </ul>
+                    <h5>Métricas esenciales (DORA)</h5>
+                    <ul>
+                        <li>Frecuencia de implementación.</li>
+                        <li>Tiempo de entrega de cambios.</li>
+                        <li>Tasa de fallas por cambio.</li>
+                        <li>Tiempo medio de recuperación (MTTR).</li>
+                    </ul>
                 </div>
             `
         }
