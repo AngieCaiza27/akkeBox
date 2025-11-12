@@ -203,6 +203,45 @@ $(document).ready(function () {
                 </div>
             `
         },
+        docusaurus: {
+            title: 'Docusaurus: Documentación de Código',
+            content: `
+                <div class="text-center mb-4">
+                    <h4>Docusaurus: Generador de Sitios de Documentación</h4>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/gNVyMEFesCQ?si=9GrCobvmJ8etT7GH"
+                        title="Video Docusaurus"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="article-description">
+                    <h5>¿Qué es Docusaurus?</h5>
+                    <p>Docusaurus es un generador de sitios estáticos enfocado en documentación técnica. Facilita crear, mantener y desplegar documentación con soporte para versionado, búsqueda y temas personalizables.</p>
+                    <h5>Características principales</h5>
+                    <ul>
+                        <li>Generación estática rápida basada en Markdown y React.</li>
+                        <li>Versionado integrado para documentación de distintas versiones del proyecto.</li>
+                        <li>Soporte para localización (i18n) y búsqueda interna.</li>
+                        <li>Plugins y themes para extender funcionalidades.</li>
+                        <li>Fácil integración con GitHub Pages, Vercel y Netlify.</li>
+                    </ul>
+                    <h5>¿Cuándo usar Docusaurus?</h5>
+                    <p>Cuando necesitas una documentación clara, versionada y con buena experiencia de lectura. Es ideal para librerías, SDKs, y proyectos de código abierto que requieren documentación técnica mantenible.</p>
+                    <h5>Ejemplo rápido</h5>
+                    <p>Crear una documentación inicial en Docusaurus típicamente involucra ejecutar <code>npx create-docusaurus@latest</code>, escribir páginas en Markdown y desplegar en un hosting estático.</p>
+                    <h5>Beneficios</h5>
+                    <ul>
+                        <li>Documentación actualizable por desarrolladores con mínima fricción.</li>
+                        <li>Mejor descubrimiento de contenido gracias a búsqueda integrada.</li>
+                        <li>Despliegue sencillo y bajo costo de hosting.</li>
+                    </ul>
+                    <p class="text-muted"><em>Docusaurus acelera la creación de documentación profesional y facilita que tus usuarios encuentren respuestas rápidamente.</em></p>
+                </div>
+            `
+        },
         devops: {
             title: 'DevOps: Cultura y Automatización',
             content: `
